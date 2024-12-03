@@ -1,0 +1,61 @@
+package test;
+
+public class Board {
+//	Board 클래스 정의
+//	static 멤버변수 int num
+//	멤버변수 private name, subject, content
+//	기본 생성자 num 1씩 증가 
+//	메서드 setter getter
+	private static int num;
+	private String name;
+	private String subject;
+	private String content;
+	
+	public Board() {
+		num++;
+	}
+	
+//	Board 모든 값을 받는 생성자 추가
+	public Board(int num, String name, String subject, String content) {
+		this.num = num;
+		this.num = num;
+		this.num = num;
+		this.num = num;
+		
+	}
+
+	public static int getNum() {
+		return num;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public static void setNum(int num) {
+		Board.num = num;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
+	
+	
+}

@@ -1,0 +1,38 @@
+package test;
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		// Person 클래스 정의
+		// 멤버변수 name, age 정의 => 데이터 은닉 => setter, getter
+		// 메서드 정의 prn() name, age 출력
+		// 기본생성자
+		// 모든 멤버변수 값을 받는 생성자
+		
+		Person person = new Person();
+//		person.setName("홍길동");
+//		person.setAge(20);
+//		System.out.println(person.getName());
+//		System.out.println(person.getAge());
+		person.prn();
+		person.prn(20);
+		person.prn("홍길동");
+		person.prn("홍길동2", 22);
+		
+		Person person2 = new Person("이순신", 30);
+		person2.prn();
+		
+		
+		System.out.println();
+		System.out.println(false);
+		System.out.println('A');
+		System.out.println(3.4);
+		System.out.println(2.5f);
+		System.out.println(5);
+		System.out.println(7L);
+		System.out.println(person2);
+		System.out.println("문자열");
+
+	}
+
+}

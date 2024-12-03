@@ -1,0 +1,14 @@
+
+public class Test12 {
+
+	public static void main(String[] args) {
+		Student2 dto = new Student2();
+		
+	}
+}
+
+class Student2 {
+	String name;
+	int age;
+}
+

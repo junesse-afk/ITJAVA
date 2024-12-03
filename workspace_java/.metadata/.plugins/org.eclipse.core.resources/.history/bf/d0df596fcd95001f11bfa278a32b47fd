@@ -1,0 +1,12 @@
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// &&(&), ||(|) 차이
+		int i = 10;
+		boolean result = i > 9 || i++ > 9;
+		System.out.println(i);
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+
+public class Test10 {
+
+	public static void main(String[] args) {
+
+	}
+}
+
+// 상위 개념 (추상화)
+
+class Dog {
+}
+
+class Cat {
+}
+
+
+
+
+
+
+
+
+

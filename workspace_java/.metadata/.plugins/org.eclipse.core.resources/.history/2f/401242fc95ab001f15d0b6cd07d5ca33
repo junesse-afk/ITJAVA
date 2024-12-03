@@ -1,0 +1,12 @@
+package test;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+//		Person 클래스 정의
+//		멤버변수 name, float height, float weight
+		메서드() prn() 이름 : , 키 : , 몸무게 :   출력
+
+	}
+
+}

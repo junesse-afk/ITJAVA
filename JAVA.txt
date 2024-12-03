@@ -1,0 +1,190 @@
+프로젝트 기반 자바 스프링 풀스택 개발자
+홍진숙 강사
+
+공유방 주소
+시작(윈도우 버튼) -  오른쪽 버튼 - 실행
+\\192.168.2.200
+
+
+프론트엔드
+HTML - CSS - JavaScript(jQuery,react,...)
+
+백엔드
+자바 - JSP - MVC JSP - 스프링 프레임워크 (스프링 부트)
+데이터베이스(Mysql, Oracle)
+
+모바일(프론트엔드)
+안드로이드(플러터) 앱개발
+
+프로젝트(취업)
+1차 프로젝트(산업체 특강)
+2차 프로젝트(산업체 특강)
+
+설치
+jdk(Java Development Kit ) 다운로드
+https://www.oracle.com/kr/java/technologies/downloads/
+
+Open Java Development Kit 다운로드
+https://github.com/ojdkbuild/ojdkbuild
+
+java-11-openjdk-11.0.15.9-1.windows.ojdkbuild.x86_64.msi (sha256)
+
+설치 확인
+C:\Program Files\ojdkbuild\java-11-openjdk-11.0.15-1
+
+시작(윈도우 버튼) -  오른쪽 버튼 - 실행
+cmd
+java -version
+openjdk version "11.0.15" 2022-04-19 LTS
+
+javac -version
+javac 11.0.15
+
+C:\Program Files\ojdkbuild\java-11-openjdk-11.0.15-1\bin
+java.exe  
+javac.exe 
+
+자바 환경설정(컴퓨터 시스템 자바경로 등록)
+시스템 환경변수 편집
+고급 - 환경변수 - 시스템 변수
+path - 편집
+새로 만들기 
+자바 프로그램 경록 등록
+C:\Program Files\ojdkbuild\java-11-openjdk-11.0.15-1\bin
+확인
+
+인터프리터 언어 : 한줄씩 명령 실행 
+컴파일 언어 : 모든 명령을 한꺼번에 실행 => 자바
+
+자바
+Java Development Kit
+- 자바 가상 기계 (JVM) : 리눅스용, 맥용, 윈도우용 제공 
+=>  자바 개발 할때 하나의 프로그램 만 개발 => 실행할때 JVM이 변경해서 실행
+- 자바의 플랫폼 독립(하드웨어, 운영체제 상관없이 동작)
+- JRE(Java RunTime Environment)
+- 자바 내장 객체 (자바 언어 미리 프로그램 만들어서 저장)
+
+https://docs.oracle.com/en/java/javase/23/
+
+cmd
+d: 
+자바명령을 번역하는 명령 => 컴퓨터에서 실행할수 있는 프로그램 생성(JavaApp.class)
+D:\>javac JavaApp.java
+
+번역된 프로그램 실행
+D:\>java JavaApp
+
+
+자바파일 JavaApp2
+System.out.println(100+200);
+
+
+개발도구 (이클립스)
+eclipse.org
+https://www.eclipse.org/downloads/
+
+Download Packages
+
+Eclipse IDE for Enterprise Java and Web Developers
+
+Windows x86_64
+Download
+
+eclipse-jee-2024-09-R-win32-x86_64
+c: 압축풀기
+C:\eclipse_java 폴더명 변경
+
+eclipse.exe => 바탕화면 바로 가기 만들기
+
+작업폴더 만들기
+d: workspace_java
+
+이클립스 작업환경
+Window - Preferences
+General - Workspace - 
+한글설정
+ Text file encoding
+Other UTF-8
+
+
+프로젝트 만들기
+
+File - New - Java Project
+프로젝트명  Test20241025
+자바버전 11버전 선택 
+Finish
+
+=========================================
+
+프로그래밍 : 프로그램을 만드는 것
+                : 코드(명령)를 통해서 컴퓨터에게 명령하는 행위
+자바 : 사람의 명령을 컴퓨터가 이해할 수 있게 함
+자연어: 안녕하세요,..사람이 사용하는 언어
+기계어 : 0, 1 로 구성되어진 언어(0100,0001 2진수)
+자바 프로그래밍 언어로, 코드를 통해서 컴퓨터에게 명령할수 있는 언어
+
+컴파일 언어 : 모든 명령을 한꺼번에 실행 => 자바
+자바 코드가 컴파일러를 통해서 바이트코드(실행코드)로 번역
+D:\>javac JavaApp.java
+
+인터프리터 언어 : 한줄씩 명령 실행
+바이트코드가 자바가상기계(JVM)에 의해 기계어로 통역
+D:\>java JavaApp
+결과 확인
+코드가 실행 컴퓨터가 기계어를 수행
+
+자바 특징
+1. 멀티 플랫폼 언어
+=> 다양한 환경(맥,리눅스,윈도우) 실행 되는 프로그래밍 언어
+=> 운영 환경에 따른 JVM 제공해서  높은 이식성(적용)
+자바코드 -> 컴파일러(번역) -> 바이트코드 -> JVM(맥,리눅스,윈도우)  -> 실행
+2. 객체 지향 언어
+객체를 조합하여 전체 프로그램을 만드는 기법
+(Object Oriented Programming)이 가능한 언어
+부품을 조립하듯, 자바 객체를 조합하여 전체 프로그램을 만듬
+
+
+자바
+1. 변수(자료형), 자료형의 형변환
+2. 연산자
+3. 제어문(조건문, 반복문)
+3-2. 배열
+4. 객체(멤버변수, 멤버함수(메서드))
+5. 객체 지향 개념 
+   1부 : 메인 : 1) 클래스 정의, 객체생성, 멤버변수 호출, 메서드() 호출
+                              : this. 자기자신 주소
+                2) 생성자():기억장소할당, 초기값할당, 생성자 없으면 기본생성자 호출,
+                : 다른 생성자가 있으면 기본생성자 자동으로 만들지 못함
+                : 생성자 오버로드, 자기자신 생성자() 호출
+                          : this() 자기자신 생성자 호출
+               3) 특징 : 데이터 은닉, 캡슐화
+                                   : 접근지정자 public protected default private
+                      : getter, setter 
+               4) 메서드 오버로딩(오버로드)
+               5) static : 객체생성없이 멤버변수, 메서드() 호출
+                                        :  static 변수를  클래스 객체생성 에서 따로 기억장소
+                                           만들지 않고 공통으로 사용
+                                        : static 메서드에는 인스턴스 변수 사용 못함
+                              => 지역변수(기본자료형 변수(값), 참조형 변수(주소))
+                      , 지역변수(매개변수) 
+                   => 멤버변수, 메서드() : 인스턴스 변수, 인스턴스 메서드()
+                              => static 변수(클래스 변수), static 메서드()
+	       6) 자바 API 배열 ArrayList => import java.util.ArrayList;
+		=> add(), get(i), size() 크기
+               7) 패키지.패키지 (폴더/폴더)
+		=> 같은 폴더, java.lang폴더 기본폴더
+		=> 다른폴더 import student.Student;/import java.util.ArrayList;
+               8) 예외처리
+               
+6. 객체 상속
+     2부
+7. 추상클래스, 인터페이스
+     3부
+8. 클래스로 만든 유틸리티(내장 프로그램)
+   4부 활용
+
+백준
+https://www.acmicpc.net/
+코딩테스트 연습
+https://school.programmers.co.kr/
+

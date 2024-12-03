@@ -1,0 +1,33 @@
+package test;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+//		1명 Member 객체생성 , set메서드 호출 값을 저장
+		Member member1 = new Member();
+		member1.setId("kim");
+		member1.setPass("123");
+		member1.setName("김길동");
+		
+//		2명 Member 객체생성 , set메서드 호출 값을 저장
+		Member member2 = new Member();
+		member2.setId("lee");
+		member2.setPass("456");
+		member2.setName("이길동");
+		
+//		3명 Member 객체생성 , set메서드 호출 값을 저장
+		Member member2 = new Member();
+		member2.setId("lee");
+		member2.setPass("456");
+		member2.setName("이길동");
+		
+//		ArrayList<Member> 배열 객체생성
+//		add() Member 저장
+		
+//		MemberDAO 객체생성
+//		리턴할형 없음 
+//		insertMember2(Member를 저장한 ArrayList 배열변수)
+//		for 출력 메서드 정의 
+	}
+
+}

@@ -1,0 +1,6 @@
+package student;
+
+public class Subject {
+	멤버변수 name, score 과목이름, 점수
+
+}

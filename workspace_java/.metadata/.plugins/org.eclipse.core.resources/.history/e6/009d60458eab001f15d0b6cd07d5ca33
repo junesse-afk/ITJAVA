@@ -1,0 +1,38 @@
+package test;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+//		기본생성자 호출
+		Car c = new Car();
+		System.out.println(c.company); //null
+		System.out.println(c.model); //null
+		System.out.println(c.price); //0
+//		초기값을 받는 생성자 호출
+		Car c2 = new Car("기아자동차", "K7", 2000);
+		System.out.println(c2.company); //기아자동차
+		System.out.println(c2.model); //K7
+		System.out.println(c2.price); //2000
+//		기본생성자 호출
+		Student s = new Student();
+		System.out.println(s.num);
+		System.out.println(s.name);
+		System.out.println(s.java);
+		System.out.println(s.db);
+		System.out.println(s.jsp);
+		System.out.println(s.html);
+//		초기값을 받는 생성자 호출
+		Student s2 = new Student(1, "홍길동", 60, 60, 60, 60);
+		System.out.println(s2.num);
+		System.out.println(s2.name);
+		System.out.println(s2.java);
+		System.out.println(s2.db);
+		System.out.println(s2.jsp);
+		System.out.println(s2.html);
+		
+//		초기값을 받는 생성자 호출
+		Person p = new Person(0, null, null, false, 0) 
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package test;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+//		Board 모든 값을 받는 생성자 추가
+		
+//		Board형을 담은 ArrayList배열 객체생성
+
+	}
+
+}

@@ -1,0 +1,19 @@
+package test;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+//		Board 클래스 정의
+//		static 멤버변수 int num
+//		멤버변수 private name, subject, content
+//		기본 생성자 num 1씩 증가 
+//		메서드 setter getter
+		
+//		BoardDAO 클래스 정의
+//		리턴할형 없음 insertBoard
+//		(Member기억장소 주소 전달 받은 값을 저장하는 변수)
+//		전달받은 값을 아이디 :  비밀번호:  이름: 출력 
+
+	}
+
+}

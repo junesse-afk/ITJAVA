@@ -1,0 +1,15 @@
+package test;
+
+public class Test8 {
+
+	public static void main(String[] args) {
+//		p487 예외클래스 : 자바로 만든 내장객체 (API)
+//		오류 : 문법오류, 실행오류(시스템적 문제)
+//		Int a = 10; //문법오류
+		
+//		예외 : 예기치 못한 오류 발생
+		System.out.println(10/0);
+
+	}
+
+}

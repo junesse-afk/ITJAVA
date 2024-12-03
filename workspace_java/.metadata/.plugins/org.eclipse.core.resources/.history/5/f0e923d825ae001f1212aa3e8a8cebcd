@@ -1,0 +1,13 @@
+
+public class Test12 {
+
+	public static void main(String[] args) {
+		
+	}
+}
+
+class Student {
+	String name;
+	int age;
+}
+

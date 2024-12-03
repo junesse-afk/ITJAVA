@@ -1,0 +1,15 @@
+package test;
+
+
+public class BoardDAO {
+//	BoardDAO 클래스 정의
+//	메서드() 리턴할형 없음 insertBoard
+//	(Board기억장소 주소 전달 받은 값을 저장하는 변수)
+//	전달받은 값을 글번호: 이름: 제목: 내용 :출력
+	public void insertBoard(Board board) {
+		System.out.println(board.getName());
+		System.out.println(board.getName());
+		System.out.println(board.getSubject());
+		System.out.println(board.getContent());
+	}
+}

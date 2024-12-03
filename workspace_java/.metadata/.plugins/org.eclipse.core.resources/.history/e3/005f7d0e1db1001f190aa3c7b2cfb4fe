@@ -1,0 +1,12 @@
+package test;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+//		Book 클래스 정의
+//		멤버변수 private String bookName, author
+//		기본생성자
+
+	}
+
+}

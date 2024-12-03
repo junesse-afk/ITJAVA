@@ -1,0 +1,11 @@
+package test;
+
+public class Student {
+
+//	멤버변수
+//	int num ,int id, name,int grade, address
+	
+//	메서드()
+//	prn()  name 출력
+	
+}

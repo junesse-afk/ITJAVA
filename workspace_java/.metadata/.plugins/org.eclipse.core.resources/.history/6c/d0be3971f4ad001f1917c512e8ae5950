@@ -1,0 +1,32 @@
+package test;
+
+public class Student {
+
+//	멤버변수
+//	int num ,int id, name,int grade, address
+//	접근제어자 static 자료형 변수명;
+	private static int num;
+	public int id;
+	public String name;
+	public int grade;
+	public String address;
+	
+//	생성자
+	public Student() {
+		num++;
+		grade++;
+	}
+	
+//	메서드()
+//	prn()  name 출력
+	public void prn() {
+		System.out.println("번호 : " + num);
+		System.out.println("이름 : " + name);
+		System.out.println("학년 : " + grade);
+	}
+	
+	public static void name() {
+		
+	}
+	
+}

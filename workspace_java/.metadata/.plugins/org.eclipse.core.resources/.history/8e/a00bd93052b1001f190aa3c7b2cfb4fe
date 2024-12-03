@@ -1,0 +1,11 @@
+package test;
+
+public class Test9 {
+	public static void main(String[] args) {
+		try {
+			// 예기치 못한 오류 발생 가능성이 높은 코드(명령)
+		}catch() {
+			// 예외가 발생하면 처리 작업
+		}
+	}
+}

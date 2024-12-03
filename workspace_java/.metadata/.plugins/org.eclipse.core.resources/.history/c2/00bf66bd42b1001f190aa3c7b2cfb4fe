@@ -1,0 +1,10 @@
+package student;
+
+public class StudentDAO {
+//	패키지 student 파일 StudentDAO 클래스 정의
+//	insertStudent(Student를 저장한 배열ArrayList변수 정의) 메서드 정의
+//	for 출력
+	public void name() {
+		
+	}
+}

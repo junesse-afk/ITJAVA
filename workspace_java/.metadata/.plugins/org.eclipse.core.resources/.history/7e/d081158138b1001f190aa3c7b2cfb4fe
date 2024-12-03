@@ -1,0 +1,14 @@
+package test;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+//		1명 Member 객체생성 , set메서드 호출 값을 저장
+//		2명 Member 객체생성 , set메서드 호출 값을 저장
+//		3명 Member 객체생성 , set메서드 호출 값을 저장
+		
+//		ArrayList<Member> 배열 객체생성
+//		add() Member 저장
+	}
+
+}

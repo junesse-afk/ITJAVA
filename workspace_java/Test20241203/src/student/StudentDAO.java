@@ -1,0 +1,19 @@
+package student;
+
+import java.util.ArrayList;
+
+public class StudentDAO {
+//	패키지 student 파일 StudentDAO 클래스 정의
+//	insertStudent(Student를 저장한 배열ArrayList변수 정의) 메서드 정의
+//	for 출력
+	public void insertStudent(ArrayList<Student> arrayList) {
+		for(int i = 0; i < arrayList.size(); i++) {
+			System.out.println(arrayList.get(i).getNum());
+			System.out.println(arrayList.get(i).getName());
+//			과목점수 출력
+			System.out.println(arrayList.get(i).getSubject().getName());
+			System.out.println(arrayList.get(i).getSubject().getScore());
+			
+		}
+	}
+}

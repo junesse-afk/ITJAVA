@@ -1,0 +1,12 @@
+package test;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+//		Member 클래스 정의
+//		멤버변수 id,pass,name,int age 정의
+//		메서드() prn() 아이디 : , 비밀번호 : , 이름 : , 나이 : 출력
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package test;
+
+public class MyDate {
+	
+	private String name;
+	private int year;
+	private int month;
+	private int day;
+	
+	public 리턴할형 setName(String name) {
+		this.name
+	}
+
+}

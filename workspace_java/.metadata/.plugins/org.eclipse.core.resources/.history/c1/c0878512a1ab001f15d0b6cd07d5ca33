@@ -1,0 +1,25 @@
+package test;
+
+public class Member {
+//	Member 클래스 정의
+//	멤버변수 id,pass,name,int age 정의
+	public String id;
+	public String pass;
+	public String name;
+	public int age;
+	
+//	메서드() prn() 아이디 : , 비밀번호 : , 이름 : , 나이 : 출력
+	public void prn() {
+		System.out.println("아이디 : " + id);
+		System.out.println("비밀번호 : " + pass);
+		System.out.println("이름 : " + name);
+		System.out.println("나이 : " + age);
+	
+	}
+	
+//	생성자=> 기억장소 할당, 초기값 할당
+//	기본생성자 => 0, null 기본 초기값 할당
+	
+//	id,pass,name,age 값을 받아서 멤버변수에 초기값 할당하는 생성자
+
+}

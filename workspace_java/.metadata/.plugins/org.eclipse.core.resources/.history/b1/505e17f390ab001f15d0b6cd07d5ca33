@@ -1,0 +1,11 @@
+package test;
+
+public class Car {
+
+//	기본생성자
+	public Car() {
+		carName = "국민차";
+		speed = 10;
+	}
+	
+}

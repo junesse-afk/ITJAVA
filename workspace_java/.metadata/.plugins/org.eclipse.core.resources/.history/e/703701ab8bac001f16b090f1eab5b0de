@@ -1,0 +1,17 @@
+package test;
+
+public class MyDate {
+	
+	private String name;
+	private int year;
+	private int month;
+	private int day;
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setYear() {
+		
+	}
+
+}

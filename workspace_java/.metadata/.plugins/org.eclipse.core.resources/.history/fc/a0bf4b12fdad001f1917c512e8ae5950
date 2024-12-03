@@ -1,0 +1,17 @@
+package test;
+
+public class Test3 {
+	int a = 10;
+	public static void main(String[] args) {
+//		p191
+//		변수
+//		1) 지역변수(로컬변수, 매개변수, 참조변수)
+//		: 메서드 내에서 정의하고 사용
+//		: 메서드 밖에서는 사용 못함
+		int a = 10;
+//		2) 멤버변수(인스턴스 변수)
+//		3) static 변수(클래스 변수)
+
+	}
+
+}

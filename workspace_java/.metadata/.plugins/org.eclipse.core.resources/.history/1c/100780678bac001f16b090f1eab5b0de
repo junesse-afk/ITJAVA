@@ -1,0 +1,10 @@
+package test;
+
+public class MyDate {
+	
+	private String name;
+	private int year;
+	private int month;
+	private int day;
+
+}

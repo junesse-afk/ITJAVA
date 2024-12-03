@@ -1,0 +1,10 @@
+package test;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+//		Member 객체생성 , set메서드 호출 값을 저장
+
+	}
+
+}

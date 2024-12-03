@@ -1,0 +1,20 @@
+
+public class Test11 {
+
+	public static void main(String[] args) {
+		int[] arr = {1, 2, 3};
+		System.out.println(arr);
+		
+		Person p = new Person("홍길동", 20);
+		System.out.println(p);
+	}
+}
+
+class Person {
+	String name;
+	int age;
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+}

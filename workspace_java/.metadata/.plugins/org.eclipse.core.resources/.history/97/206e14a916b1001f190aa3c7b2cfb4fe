@@ -1,0 +1,16 @@
+package test;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+//		배열 : 같은형의 여러개 기억장소를 정의 사용
+		int a[] = new int[5];
+		
+		String b[] = new String[5];
+		
+		Board c[] = new Board[5];
+		
+		
+	}
+
+}

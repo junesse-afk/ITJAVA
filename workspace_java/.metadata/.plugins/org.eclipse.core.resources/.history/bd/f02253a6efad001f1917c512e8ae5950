@@ -1,0 +1,16 @@
+package test;
+
+public class Student {
+
+//	멤버변수
+//	int num ,int id, name,int grade, address
+	public int num;
+	int id;
+	String name;
+	int grade;
+	String address;
+	
+//	메서드()
+//	prn()  name 출력
+	
+}

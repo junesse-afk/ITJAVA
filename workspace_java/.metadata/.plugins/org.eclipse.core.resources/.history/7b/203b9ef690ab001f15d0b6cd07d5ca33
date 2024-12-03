@@ -1,0 +1,12 @@
+package test;
+
+public class Car {
+//	멤버변수
+	
+//	기본생성자
+	public Car() {
+		carName = "국민차";
+		speed = 10;
+	}
+	
+}

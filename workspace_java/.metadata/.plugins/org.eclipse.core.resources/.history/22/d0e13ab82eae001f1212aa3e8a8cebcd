@@ -1,0 +1,34 @@
+package collection;
+
+import java.util.ArrayList;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		
+		
+		ArrayList<Integer> list = new ArrayList();
+		list.add(1);
+		list.add(3.14);
+		list.add("asdasd");
+		System.out.println(list);
+		
+		StudentDTO s1 = new StudentDTO(1, "홍길동");
+		StudentDTO s2 = new StudentDTO(2, "이순신");
+		StudentDTO s3 = new StudentDTO(3, "강감찬");
+//		StudentDTO s4 = new StudentDTO(rs.getInt("IDX"), rs.getString("NAME"));
+	}
+}
+
+class StudentDTO {
+	int idx;
+	String name;
+	public StudentDTO(int idx, String name) {
+		this.idx = idx;
+		this.name = name;
+	}
+}
+
+
+
+

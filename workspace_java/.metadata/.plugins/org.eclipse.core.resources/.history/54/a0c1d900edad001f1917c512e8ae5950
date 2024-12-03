@@ -1,0 +1,10 @@
+package test;
+
+public class Student {
+
+//	멤버변수
+//	num , id, name, grade, address
+	
+//	메서드()
+	
+}

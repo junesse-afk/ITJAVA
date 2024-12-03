@@ -1,0 +1,53 @@
+package test;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+//		객체지향개념 특징 : 데이터 은닉, 캡슐화 
+//		: 데이터를 저장하는 공간인 멤버변수의 접근을
+//		  클래스 내에서 만 접근하고 외부에는 접근 못하게 설정
+//		: 외부에서 멤버변수 접근 할 수 있는 메서드 준비해서 사용
+		
+//		p162 접근지정자 
+//		     - public : 모두접근, 같은 클래스 내, 같은 폴더, 다른 폴더
+//		     - protected : 같은 클래스 내, 같은 폴더, 다른 폴더 (상속관계) 접근
+//		     - default(생략) : 같은 클래스 내, 같은 폴더 접근
+//		     - private : 같은 클래스 내 접근 => 데이터 은닉
+		
+		Student student = new Student();
+//		멤버변수 : 데이타 은닉 -> 외부에서 접근 못하게 막음 
+//               private 접근지정자를 이용
+		
+//		멤버변수에 값을 저장
+//		=> 멤버변수에 값을 저장하기 위한 public 메서드() 정의
+//		student.num = 1;
+		student.setNum(1);
+//		student.name = "홍길동";
+		student.setName("홍길동");
+//		student.java = 100;
+		student.setJava(100);
+//		student.jsp = 95;
+		student.setJsp(95);
+//		student.db = 90;
+		student.setDb(90);
+//		student.html = 85;
+		student.setHtml(85);
+
+		
+//		멤버변수 값을 가져오기
+//		=> 멤버변수 값을 가져오기 위한 public 메서드() 정의
+//		System.out.println(student.num);
+		System.out.println(student.getNum());
+//		System.out.println(student.name);
+		System.out.println(student.getName());
+//		System.out.println(student.java);
+//		System.out.println(student.jsp);
+//		System.out.println(student.db);
+//		System.out.println(student.html);
+		
+		student.intro();
+		System.out.println(student.sum());
+
+	}
+
+}

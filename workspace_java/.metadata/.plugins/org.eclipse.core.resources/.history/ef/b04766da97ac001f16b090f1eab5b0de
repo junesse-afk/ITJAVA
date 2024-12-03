@@ -1,0 +1,33 @@
+package test;
+
+public class Person {
+//멤버변수
+	private String name;
+	private int age;
+//	생성자 : 기억장소 할당, 초기값 할당
+	public Person(String name, int age) {
+		
+	}
+//	메서드()
+	public String getName() {
+		return name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void prn() {
+		System.out.println("이름 : " + name);
+		System.out.println("나이 : " + age);
+	}
+	
+	
+	
+	
+}

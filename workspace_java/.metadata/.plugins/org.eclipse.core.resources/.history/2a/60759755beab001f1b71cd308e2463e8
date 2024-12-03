@@ -1,0 +1,32 @@
+
+public class Test10 {
+
+	public static void main(String[] args) {
+
+	}
+}
+
+// 상위 개념 (추상화)
+
+class Animal {
+	String name;
+	int age;
+	
+	public void cry() {
+		System.out.println("울겟지??");
+	}
+}
+class Dog {
+}
+
+class Cat {
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+package test;
+
+public class Test4 {
+	public static void main(String[] args) {
+//		String 클래스 => 문자열 주제 => 자바 내장객체
+//		ArrayList 클래스 => 배열 주제 => 자바 내장객체
+//		배열의 단점을 보완해서 만들 클래스 ArrayList
+		
+	}
+}

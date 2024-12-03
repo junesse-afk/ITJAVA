@@ -1,0 +1,9 @@
+package test;
+
+public class Test4 {
+	public static void main(String[] args) {
+//		String 클래스 => 문자열 주제 => 자바 내장객체
+//		ArrayList 클래스 => 배열 주제 => 자바 내장객체
+		
+	}
+}

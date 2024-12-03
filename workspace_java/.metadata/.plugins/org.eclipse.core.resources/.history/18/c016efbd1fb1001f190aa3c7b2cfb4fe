@@ -1,0 +1,17 @@
+package test;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+//		Book 클래스 정의
+//		멤버변수 private String bookName, author
+//		기본생성자
+//		모든 값을 받는 생성자
+//		set, get메서드 정의
+//		prn()메서드 책이름, 저자 출력
+		
+//		Book 3개의 배열에 저장
+
+	}
+
+}

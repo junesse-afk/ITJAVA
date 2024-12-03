@@ -1,0 +1,25 @@
+package test;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+//		클래스 Car정의
+//		static 멤버변수 kind 차 종류
+//		인스턴스 멤버변수 price 차 가격
+//		static 메서드() prn()   static 멤버변수 출력 
+//		인스턴스 메서드() prn2()  kind, price 출력
+//		------------------------------
+//		kind static 멤버변수(클래스 멤버변수)에 값 저장
+		Car.kind = "소나타";
+		
+//		Car객체생성
+		Car car = new Car();
+//		price 인스턴스 멤버변수 값 저장
+//		prn(), prn2() 메서드 호출
+		
+//		Car객체생성
+//		price 인스턴스 멤버변수 값 저장
+//		prn(), prn2() 메서드 호출
+	}
+
+}

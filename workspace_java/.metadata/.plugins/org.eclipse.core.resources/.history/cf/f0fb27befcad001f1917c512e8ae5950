@@ -1,0 +1,14 @@
+package test;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+//		p191
+		변수
+//		1) 지역변수(로컬변수)
+//		2) 멤버변수(인스턴스 변수)
+//		3) static변수(클래스 변수)
+
+	}
+
+}

@@ -1,0 +1,46 @@
+package test;
+
+public class Test1 {
+	public static void main(String[] args) {
+//		static : 객체생성없이 멤버변수, 메서드() 호출
+//             :  static 변수(클래스변수)를  클래스 객체생성 
+//		          에서 따로 기억장소 만들지 않고 공통으로 사용
+		
+//		static 있으면 객체생성없이 멤버변수, 메서드() 호출
+//		Student.num = 1000;
+//		static 없으면 객체생성없이 호출하면 에러발생
+//		Student.name = "홍길동";
+		
+		Student student = new Student();
+//		student.num++;
+		student.name = "홍길동";
+		student.grade++;
+//		System.out.println(student.num);
+//		System.out.println(student.name);
+//		System.out.println(student.grade);
+		student.prn();
+		
+		Student.prn2();
+		student.prn2();
+		
+		System.out.println("=====================");
+		
+		Student student2 = new Student();
+//		student2.num++;
+		student2.name = "이길동";
+		student2.grade++;
+//		System.out.println(student2.num);
+//		System.out.println(student2.name);
+//		System.out.println(student2.grade);
+		student2.prn();
+		
+		Student.prn2();
+		student2.prn2();
+		
+		
+//		Math클래스 static 멤머변수
+		System.out.println(Math.PI);
+//		Math클래스  static 메서드()
+		
+	}
+}
