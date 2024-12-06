@@ -26,6 +26,7 @@ public class Test2 {
 //		Circle 객체생성  prn() 메서드 호출
 		Circle circle = new Circle();
 		circle.prn();
+		circle.cirprn();
 		
 //		Tri 객체생성  prn() 메서드 호출
 		Tri tri = new Tri();
@@ -47,9 +48,35 @@ public class Test2 {
 		System.out.println(b);//3
 		
 //		참조형의 형변환
-//		자동으로 형변환  부모 = 자식 객체생성
-//		명시적으로 형변환 자식 = (자식형으로 명시적 형변환)부모
+//		자동으로 형변환  부모 = 자식 객체생성 (업캐스팅)
+//		명시적으로 형변환 자식 = (자식형으로 명시적 형변환)부모(다운캐스팅)
 		
+//		업캐스팅을 이용한 다형성
+//		Shape = Circle
+		Shape shape = new Circle();
+		shape.prn(); //원을 그린다
+//		shape.cirprn();
+		
+		shape = new Tri();
+		shape.prn(); //삼각형을 그린다
+		
+		shape = new Rec();
+		shape.prn(); //사각형을 그린다		
+		
+		System.out.println("---------------------");
+		
+		School school = new School();
+		//Shape shape = new Circle();
+		school.draw(circle); 
+		// 부모 도형 변수 = 원 (자동으로 형변환,업캐스팅)
+//		Shape shape = new Tri();
+		school.draw(tri);
+//		Shape shape = new Rec();
+		school.draw(rec);
+		
+//		session.setAtrribute(String,모든참조형 부모 Object)
+//		session.setAtrribute("id","kim")
+//		session.setAtrribute("id",Member)
 		
 	}
 

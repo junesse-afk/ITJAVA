@@ -16,4 +16,8 @@ public class Circle extends Shape{
 		System.out.println("원을 그린다");	
 	}
 	
+	public void cirprn() {
+		System.out.println("cirprn() 원을 그린다");	
+	}
+	
 }

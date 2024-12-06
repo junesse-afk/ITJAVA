@@ -177,13 +177,13 @@ D:\>java JavaApp
                8) 예외처리 try{}catch(){}finally{} / throws Execption
                
 6. 객체 상속 
-     2부 1) extends 부모   super.멤버변수, super.메서드()
+     2부 1) 특징 상속 extends 부모   super.멤버변수, super.메서드()
          2) 다른폴더 protected 접근가능
          3) 상속 생성자 super() 
 	4) 메서드 오버라이딩
-              5) 형변환  
-              6) 다형성
-7. 추상클래스, 인터페이스
+              5) 형변환 (업캐스팅, 다운캐스팅) , instanceof
+              6) 특징 다형성
+7. 추상클래스, 인터페이스(메서드 오버라이딩, 업캐스팅, 다형성)
      3부
 8. 클래스로 만든 유틸리티(내장 프로그램)
    4부 활용
