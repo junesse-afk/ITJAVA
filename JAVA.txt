@@ -174,10 +174,15 @@ D:\>java JavaApp
                7) 패키지.패키지 (폴더/폴더)
 		=> 같은 폴더, java.lang폴더 기본폴더
 		=> 다른폴더 import student.Student;/import java.util.ArrayList;
-               8) 예외처리
+               8) 예외처리 try{}catch(){}finally{} / throws Execption
                
-6. 객체 상속
-     2부
+6. 객체 상속 
+     2부 1) extends 부모   super.멤버변수, super.메서드()
+         2) 다른폴더 protected 접근가능
+         3) 상속 생성자 super() 
+	4) 메서드 오버라이딩
+              5) 형변환  
+              6) 다형성
 7. 추상클래스, 인터페이스
      3부
 8. 클래스로 만든 유틸리티(내장 프로그램)
