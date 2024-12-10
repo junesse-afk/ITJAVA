@@ -20,7 +20,14 @@ public class Calculator implements Calc, Calc2{
 
 	@Override
 	public int div(int num1, int num2) {
-		return num1 / num2;
+//		num2가 0이 아니면 return num1 / num2
+//		       0 이면 return ERROR (Calc 변수)
+		if(num2 != 0) {
+			return num1 / num2;
+		}else {
+			return Calc.ERROR;
+		}
+		
 	}
 
 	@Override

@@ -4,6 +4,10 @@ public class Test4 {
 
 	public static void main(String[] args) {
 //		인터페이스 Calc  정의 
+		
+		System.out.println(Calc.a); // static
+//		Calc.a = 100; //final
+		
 //		추상메서드 정의 int add(int num1, int num2)
 //		추상메서드 정의 int sub(int num1, int num2)
 //		추상메서드 정의 int mul(int num1, int num2)
@@ -16,6 +20,7 @@ public class Test4 {
 		System.out.println(calc.sub(10, 20));
 		System.out.println(calc.mul(10, 20));
 		System.out.println(calc.div(10, 20));
+		System.out.println(calc.div(10, 0));
 		
 //		인터페이스 Calc2  정의 
 //		추상메서드 정의 prn()
