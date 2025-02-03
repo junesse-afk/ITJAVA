@@ -63,10 +63,36 @@ public class Test1 {
 		System.out.println();
 		System.out.println("----------------");
 		//17 번
+		jsu [] st = {
+				new jsu("데이터1", 95, 88),
+				new jsu("데이터2", 84, 91),
+				new jsu("데이터3", 86, 75)
+		};
+		st[1].hab = st[1].os + st[2].db; //84 + 75 = 159
+		st[1].hhab = st[1].hab + st[0].os + st[0].db;//159 + 95 + 88 = 342 
+		
+		System.out.printf("%d\n",st[1].hab); //159
+		System.out.printf("%d\n",st[1].hhab);//342
+		System.out.printf("%d\n",st[1].hab + st[1].hhab);//501
+//		결과값 501
 		
 	}
 
 }
+//17번 클래스
+class jsu{
+	String name;
+	int os;
+	int db;
+	int hab;
+	int hhab;
+	public jsu(String name, int os, int db) {
+		this.name = name;
+		this.os = os;
+		this.db = db;
+	}
+}
+
 
 //1번클래스
 class Connection{
