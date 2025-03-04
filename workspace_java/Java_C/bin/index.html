@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>HTML 커스텀태그</h1>
+	<header></header>
+	<custom-grid data="테이블명"></custom-grid>
+	<custom-footer></custom-footer>	
+		
+<!-- 	<custom-input nm="나이"></custom-input> -->
+<!-- 	<custom-input nm="이름"></custom-input> -->
+<!-- 	<custom-input nm="전화번호"></custom-input> -->
+	
+</body>
+</html>
+
+<script>
+	class CustomInput extends HTMLElement {
+		connectedCallback(){
+// 			debugger;
+			let label = document.createElement('label');
+			let input = document.createElement('input');
+			
+			label.innerHTML = this.getAttribute('nm');
+			this.appendChild(label);
+			this.appendChild(input);
+		}
+	}
+	customElements.define('custom-input', CustomInput);
+</script>
+
+
+
+

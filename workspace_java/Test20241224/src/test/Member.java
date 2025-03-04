@@ -30,7 +30,7 @@ public class Member {
 	
 //	빌더 패턴 사용 => 정적 내부 클래스 Builder
 	public static class Builder{
-//		매개변수 (기본값 설정)
+//		멤버변수 (기본값 설정)
 		private String id = "";
 		private String pass = "";
 		private String name = "";

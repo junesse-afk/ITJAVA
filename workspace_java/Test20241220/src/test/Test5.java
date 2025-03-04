@@ -45,7 +45,8 @@ public class Test5 {
 		list.stream().sorted().forEach(s -> System.out.println(s));
 		System.out.println("---------------");
 //		조건
-		list.stream()
+		list
+		.stream()
 		.filter(s -> s.equals("html"))
 		.forEach(s -> System.out.println(s));
 		

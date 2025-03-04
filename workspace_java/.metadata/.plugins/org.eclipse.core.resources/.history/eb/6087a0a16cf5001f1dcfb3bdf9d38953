@@ -1,0 +1,161 @@
+package test;
+
+// 14번
+interface Number{
+	int sum(int[] a, boolean odd);
+}
+ class ODDNumber implements Number{
+
+	@Override
+	public int sum(int[] a, boolean odd) {
+		int result = 0;
+		for(int i = 0; i < a.length; i++) {
+			if((odd && a[i] % 2 != 0) || (!odd && a[i] % 2 == 0)) {
+				result += a[i];
+			}
+		}
+		return result;
+	}
+	 
+ }
+
+public class Test6 {
+
+	public static void main(String[] args) {
+//		2024년 2회 정보처리기사 실기 기출
+		// 1번 
+		int[] a = new int[]{1, 2, 3, 4};
+        int[] b = new int[]{1, 2, 3, 4};
+        int[] c = new int[]{1, 2, 3};
+        check(a, b);
+        check(a, c); 
+        check(b, c); 
+        // 결과 NNN
+        
+        System.out.println("---------------------");
+        System.out.println();
+        
+        // 6번
+        String a6 = "abdcabcabca";
+        String p1 = "ab";
+        String p2 = "ca";
+        
+        String out = "ab" + fnCalculation(a6,p1) + "ca" + fnCalculation(a6,p2);
+        System.out.println(out);
+        // 결과 ab3ca3
+        
+        
+        //13 번
+        int arr[][] = {
+        		{1,2,3}, //0
+        		{4,5,6}, //1
+        		{7,8,9}  //2
+        };
+        
+        int parr[][] = {arr[1], arr[2]};
+        int result = parr[1][1] + parr[1][2] + parr[0][0];
+        System.out.println(parr[1][1]); // 8
+        System.out.println(parr[1][2]); // 9
+        System.out.println(parr[0][0]); // 4
+      //parr[1][1] + *(parr[1]+2) + **parr
+        System.out.println(result);	
+        //결과 21
+        
+        //14번
+        int a14[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        ODDNumber OE = new ODDNumber();
+        System.out.println(OE.sum(a14, true) + "," + OE.sum(a14, false));
+        // 홀수의 합, 짝수의 합
+        // 결과 25,20
+        
+        //15 번
+        String str1 = "first";
+        char str2[] = new char[50]; //"teststring";
+        int result15 = 0;
+        sumFn(str2, str1);
+        
+        for(int i = 0; str2[i] != '\0'; i++) {
+        	result15 += i;
+        }
+        System.out.println(result15);
+        // 0 + 1 + 2 + 3 + 4
+//        결과 10
+        System.out.println("==============");
+        //17번
+        String str = "abacabcd";
+        boolean[] seen = new boolean[256];
+        System.out.println(calculFn(str,str.length()-1,seen));
+        // 결과 dcba
+        
+        
+//     calculFn("abacabcd",7,seen) => c = 7번째 d => result = cba => dcba
+//     calculFn("abacabcd",6,seen) => c = 6번째 c => reuslt = cba => return cba
+//     calculFn("abacabcd",5,seen) => c = 5번째 b => result = cba => return cba
+//     calculFn("abacabcd",4,seen) => c = 4번째 a => result = cba => return cba
+//     calculFn("abacabcd",3,seen) => c = 3번째 c => result = ba => return cba
+//     calculFn("abacabcd",2,seen) => c = 2번째 a => result = ba => return ba
+//     calculFn("abacabcd",1,seen) => c = 1번째 b => result = a => return ba
+//     calculFn("abacabcd",0,seen) => c = 0번째 a => result = "" => return a       
+//     calculFn("abacabcd",-1,seen) => return "" 
+        
+        // 18 번
+        int a18 = 11;
+        int b18 = 19;
+        
+	}
+	
+	//18번
+	public static void swap(int a, int b) {
+		int t = a;
+		a = b;
+		b = t;
+	}
+	
+	//17번
+	public static String calculFn(String str, int index, boolean[] seen) {
+		if(index < 0) return "";
+		char c = str.charAt(index);
+		String result = calculFn(str,index-1,seen);
+		if(!seen[c]) {
+			// 처음 나온 문자는 => 문자+result
+			seen[c] = true;
+			return c + result;
+		}
+		// 중복된 문자는 => result
+		return result;
+	}
+	
+	
+	// 15번 메서드
+	public static void sumFn(char[] d, String s) {
+		int i = 0;
+		while(i < s.length()) {
+			d[i] = s.charAt(i);
+			i++;
+		}
+		d[s.length()] = '\0';
+	}
+	
+	//6 번
+	public static int fnCalculation(String x, String y) {
+		int result = 0;
+		for(int i = 0; i < (x.length()-1); i++) {
+			String temp = x.substring(i, (i + y.length()));
+			System.out.println(temp);
+			if(temp.equals(y)) {
+				result += 1;
+			}
+		}
+		return result;
+	}
+	
+	//1번
+	 public static void check(int[] a, int[] b) {
+	        if (a==b) {
+	            System.out.print("O");
+	        }else{
+	            System.out.print("N");
+	        }
+	    }
+	 
+}

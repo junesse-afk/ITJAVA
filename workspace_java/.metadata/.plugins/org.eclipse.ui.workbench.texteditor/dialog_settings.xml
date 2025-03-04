@@ -2,6 +2,19 @@
 <section name="Workbench">
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
+	<list key="searchhistory">
+		<item value="getCheckboxValue"/>
+		<item value="addApprLineButton"/>
+		<item value="input"/>
+		<item value="MM"/>
+		<item value="get("/>
+		<item value="remove()"/>
+		<item value="char[]"/>
+		<item value="char"/>
+		<item value="substring"/>
+		<item value="value"/>
+		<item value="toString"/>
+	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>

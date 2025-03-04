@@ -18,6 +18,7 @@ public class Point3 extends Point2{
 	public Point3(int x, int y, int z) {
 		super(x, y);
 		System.out.println("생성자 x, y, z 받는 생성자");
+//		부모의 멤버변수 오버라이딩 (재정의)
 //		this.x = 100;
 //		super.y = 200;
 		this.z = z;

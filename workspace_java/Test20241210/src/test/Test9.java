@@ -26,7 +26,16 @@ public class Test9 {
 		
 //		clone() 복제
 		try {
+//			public class Student implements Cloneable 선언
+			
 			Student copystudent = (Student)student1.clone();
+			
+			System.out.println(student1);
+			System.out.println(copystudent);
+			
+			System.out.println(Integer.toHexString(student1.hashCode()));//6b143ee9
+			System.out.println(Integer.toHexString(copystudent.hashCode()));//737996a0
+			
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}

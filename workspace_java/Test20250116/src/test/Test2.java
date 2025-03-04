@@ -39,7 +39,32 @@ public class Test2 {
 			}
 		}
 		// 0+1+2+3+4+5=15
+		System.out.println();
+		System.out.println("----------------");
+		// 15번
+		Good[] s = {
+			new Good("Kim", 28)	,
+			new Good("Lee", 38)	,
+			new Good("Seo", 50)	,
+			new Good("Park", 35)	
+		};
+		
+		Good p = s[1];
+		
+		System.out.println(p.name);
+		System.out.println(p.age);
+		
 		
 	}
 
 }
+
+class Good{
+	String name;
+	int age;
+	public Good(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+}
+

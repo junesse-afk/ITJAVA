@@ -23,11 +23,24 @@ public class Test4 {
 
 		
 //		Anonymous2 객체생성
+		Anonymous2 anonymous2 = new Anonymous2();
 //		익명객체변수 field  사용 turnOn() 메서드 호출
+		anonymous2.field.turnOn();
 //		method1() 호출
+		anonymous2.method1();
 //		method2(익명객체 RemoteControl생성) 호출
 //		익명객체 => turnOn()메서드 정의 "SmartTV를 켭니다"
 //		          turnOff() 메서드 재정의 "SmartTV를 끕니다" 호출
+		anonymous2.method2(new RemoteControl() {
+			@Override
+			public void turnOn() {
+				System.out.println("SmartTV를 켭니다");
+			}
+			@Override
+			public void turnOff() {
+				System.out.println("SmartTV를 끕니다");
+			}
+		});
 		
 	}
 

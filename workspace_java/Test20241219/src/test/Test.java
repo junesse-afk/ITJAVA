@@ -40,7 +40,6 @@ public class Test {
 				
 		System.out.println("출금 후 금액 : " + account.withdraw(7000));
 		
-
 	}
 
 }

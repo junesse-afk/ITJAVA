@@ -17,6 +17,12 @@ public class Test {
 //		SuperAirplane 객체생성
 //		flyMode 에 값 저장
 //		fly() 메서드 호출
+		SuperAirplane superAirplane = new SuperAirplane();
+		superAirplane.flyMode = SuperAirplane.NORMAL;
+		superAirplane.fly();
+		
+		superAirplane.flyMode = SuperAirplane.SUPER;
+		superAirplane.fly();
 
 	}
 

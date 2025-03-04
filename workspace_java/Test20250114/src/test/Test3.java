@@ -67,7 +67,16 @@ public class Test3 {
 		System.out.println();
 		System.out.println("----------------");
 		// 17번 while continue % 짝수의 합
-		
+		i = 0;
+		int sum = 0;
+		while(i < 10) {
+			i++;
+			if(i % 2 == 1) 
+				continue;
+			sum += i;
+		}
+		System.out.println(sum);
+		//  2 4 6 8 10 => 30 결과
 		
 	}
 

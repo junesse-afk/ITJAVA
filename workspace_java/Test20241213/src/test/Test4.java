@@ -77,16 +77,16 @@ public class Test4 {
 			System.out.println(i);
 		}
 		Iterator<String> ir2 = list.iterator();
-		 while(ir2.hasNext()) {
-			 String s = ir2.next();
-			 System.out.println(s);
-		 }
+		while(ir2.hasNext()) {
+			String s = ir2.next();
+			System.out.println(s);
+		}
 		 
-		 Iterator<String> ir3 = linkedList.iterator();
-		 while(ir3.hasNext()) {
-			 String s = ir3.next();
-			 System.out.println(s);
-		 }
+		Iterator<String> ir3 = linkedList.iterator();
+		while(ir3.hasNext()) {
+			String s = ir3.next();
+			System.out.println(s);
+		}
 		 
 
 	}

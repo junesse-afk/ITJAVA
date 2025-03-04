@@ -81,6 +81,28 @@ public class Test1 {
 		System.out.println("----------------");
 		Parent obj = new Child();
 		System.out.println("결과 " + obj.compute(4));
+//		1단계 compute(4)
+//		2단계 compute(3)                           + compute(1)
+//		3단계 compute(2)               + compute(0)
+//		4단계 compute(1) + compute(-1)
+//		5단계    1
+//		6단계    1       +    -1
+//		7단계    1       +    -1       +     0     
+//		8단계    1       +    -1       +     0      +     1
+//		결과     1
+		System.out.println();
+		System.out.println("----------------");
+//		1단계 compute(4)	
+//		2단계 compute(3)                        + compute(2)
+//		3단계 compute(2)            + compute(1)
+//		4단계 compute(1) + compute(0)
+//		5단계     1
+//		6단계     1      +     0       
+//		7단계     1      +     0     +    1
+//		8단계     1      +     0     +    1     + compute(1) + compute(0)
+//		9단계     1      +     0     +    1     +       1    + compute(0)
+//	   10단계     1      +     0     +    1     +       1    + 0
+//		결과      3
 	}
 }
 
@@ -92,10 +114,10 @@ class Parent{
 	}
 }
 class Child extends Parent{
-	@Override
-	public int compute(int num) {
-		System.out.println("Child compute(num)" + num);
-		if(num <= 1) return num;
-		return compute(num - 1) + compute(num - 3);
-	}
+//	@Override
+//	public int compute(int num) {
+//		System.out.println("Child compute(num)" + num);
+//		if(num <= 1) return num;
+//		return compute(num - 1) + compute(num - 3);
+//	}
 }

@@ -1,6 +1,6 @@
 package test;
 
-public class Student {
+public class Student implements Cloneable{
 //	멤버변수 name, num
 	String name;
 	int num;
